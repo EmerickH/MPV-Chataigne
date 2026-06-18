@@ -4,9 +4,9 @@
   "path":"Custom",
   
   "version":"2.1.0",
-  "description":"My module description",
-  "url":"https://github.com/tommag/Sample-Chataigne-module",
-  "downloadURL":"",
+  "description":"MPV Module for Chataigne",
+  "url":"https://github.com/EmerickH/MPV-Chataigne",
+  "downloadURL":"https://github.com/EmerickH/MPV-Chataigne/archive/refs/heads/main.zip",
 
   "hasInput":true,
   "hasOutput":true, 
@@ -23,7 +23,7 @@
 
   },
 
-  "hideDefaultParameters": [ "autoAdd", "oscInput/localPort"],
+  "hideDefaultParameters": [ ],
 
   "scripts": 
   [
