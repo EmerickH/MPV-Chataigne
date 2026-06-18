@@ -1,0 +1,95 @@
+{
+  "name":"MPV",
+  "type":"OS",
+  "path":"Custom",
+  
+  "version":"2.1.0",
+  "description":"My module description",
+  "url":"https://github.com/tommag/Sample-Chataigne-module",
+  "downloadURL":"",
+
+  "hasInput":true,
+  "hasOutput":true, 
+
+  "hideDefaultCommands":false,
+  
+  "defaults":
+  {	
+
+  },
+
+  "parameters":
+  {
+
+  },
+
+  "hideDefaultParameters": [ "autoAdd", "oscInput/localPort"],
+
+  "scripts": 
+  [
+    "moduleScript.js"
+  ],
+
+  "values":
+  {
+
+  },
+
+  "commands":
+  {
+    
+    "Seek":
+    {
+      "menu":"",  
+      "callback":"seek",
+      "parameters":
+      {
+        "Value":
+        {
+          "type":"Float",
+          "min":0,
+          "max":100000,
+          "default":0
+        }
+      }
+    },
+    "Load file":
+    {
+      "menu":"",  
+      "callback":"load",
+      "parameters":
+      {
+        "Value":
+        {
+          "type":"String"
+        }
+      }
+    },
+    "Command":
+    {
+      "menu":"",  
+      "callback":"command",
+      "parameters":
+      {
+	"Command": {
+		"type":"Enum",
+		"options":{
+			"Play": "play",
+			"Pause": "pause",
+		}
+	}
+      }
+    },
+    "Custom command":
+    {
+      "menu":"",
+      "callback":"customCommand",
+      "parameters":
+      {
+        "Command": {
+                "type":"String",
+        }
+      }
+    }
+  }
+}
